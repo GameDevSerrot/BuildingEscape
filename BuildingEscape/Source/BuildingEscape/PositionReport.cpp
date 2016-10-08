@@ -12,7 +12,7 @@ UPositionReport::UPositionReport()
 	bWantsBeginPlay = true;
 	PrimaryComponentTick.bCanEverTick = true;
 
-	// ...
+	
 }
 
 
@@ -22,7 +22,7 @@ void UPositionReport::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	
+	UE_LOG(LogTemp, Warning, TEXT("Position Report reporting for duty on Chair!"));
 }
 
 
@@ -32,5 +32,6 @@ void UPositionReport::TickComponent( float DeltaTime, ELevelTick TickType, FActo
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
 
 	// ...
+	
 }
 
